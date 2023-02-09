@@ -4,16 +4,17 @@ import logging
 def calculate(act, x, y):
     if act == "1":
         logging.info("Dodaję %s i %s" % (x, y))
-        print("Wynik to: ", x + y)
+        res = x + y
     elif act == "2":
         logging.info("Odejmuję od %s  %s" % (x, y))
-        print("Wynik to: ", x - y)
+        res = x - y
     elif act == "3":
         logging.info("Mnożę %s i %s" % (x, y))
-        print("Wynik to: ", x * y)
+        res = x * y
     elif act == "4":
         logging.info("Dzielę %s przez %s" % (x, y))
-        print("Wynik to: ", x / y)
+        res = x / y
+    print("Wynik to: ", res)
 
 
 if __name__ == "__main__":
